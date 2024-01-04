@@ -26,3 +26,13 @@
 		}
 	}
 }
+
+@media (min-width: 992px) {
+	.header {
+		.wrapper {
+			.show-shadow {
+				box-shadow: none;
+			}
+		}
+	}
+}
