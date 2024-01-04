@@ -60,8 +60,38 @@ body {
 			&__menu {
 				position: absolute;
 				top: 70px;
+				height: 0;
 				width: 100%;
 				background-color: rgb(133, 255, 133);
+				overflow: hidden;
+
+				&-list {
+					display: block;
+					margin: 15px auto 15px auto;
+					width: fit-content;
+					text-align: center;
+					list-style-type: none;
+					opacity: 0;
+
+					&-item {
+						margin: 1.75em 0;
+
+						&-link {
+							padding: 1em 2em;
+							font-family: "Nunito", sans-serif;
+							color: $black;
+							text-decoration: none;
+						}
+					}
+				}
+
+				.show-list {
+					opacity: 1;
+				}
+			}
+
+			.show-menu {
+				height: auto;
 				border-bottom: 2px solid $orange-darker;
 			}
 		}
