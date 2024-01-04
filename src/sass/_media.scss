@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+	.header {
+		.wrapper {
+			.navbar {
+				&__logo {
+					&-link {
+						font-size: 2.1rem;
+						padding: 1em 1.5em;
+					}
+				}
+
+				&__hamburger {
+					padding: 1.5em;
+				}
+
+				&__menu {
+					&-list {
+						&-item {
+							&-link {
+								font-size: 1.8rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
