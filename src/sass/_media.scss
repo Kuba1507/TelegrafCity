@@ -150,6 +150,73 @@
 				}
 			}
 
+			.hero-section {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				height: 700px;
+
+				.image-box {
+					width: 40%;
+					height: 370px;
+					order: 2;
+
+					img {
+						filter: brightness(90%);
+					}
+
+					&__mobile {
+						display: none;
+					}
+
+					&__desktop {
+						display: block;
+						border-top-left-radius: 50px;
+						border-bottom-left-radius: 50px;
+						border-left: 1px solid $dark;
+						border-bottom: 1px solid $dark;
+						border-top: 1px solid $dark;
+						box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+							rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+					}
+				}
+
+				.text-box {
+					padding: 0 1em;
+					width: 40%;
+					order: 1;
+					text-align: left;
+
+					.heading,
+					&__description {
+						text-align: left;
+					}
+
+					.heading {
+						font-size: 4.5rem;
+					}
+
+					&__description {
+						font-size: 1.8rem;
+					}
+
+					.cta-button {
+						margin-top: 4em;
+						padding: 0.9em 2em;
+						font-size: 2rem;
+						border-radius: 50px;
+						-webkit-box-shadow: 20px 16px 43px -12px rgba(183, 183, 183, 1);
+						-moz-box-shadow: 20px 16px 43px -12px rgba(183, 183, 183, 1);
+						box-shadow: 20px 16px 43px -12px rgba(183, 183, 183, 1);
+					}
+				}
+
+				.circle-one,
+				.circle-two {
+					display: none;
+				}
+			}
+
 			.show-shadow {
 				box-shadow: none;
 			}
