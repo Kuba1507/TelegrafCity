@@ -135,6 +135,7 @@ body {
 
 			.text-box {
 				padding: 1.5em 2em;
+				text-align: center;
 
 				.heading {
 					font-family: "Montserrat", sans-serif;
@@ -148,9 +149,21 @@ body {
 				&__description {
 					margin-top: 0.75em;
 					font-family: "Nunito", sans-serif;
-					font-size: 1.7rem;
+					font-size: 1.6rem;
 					font-weight: 400;
 					text-align: center;
+				}
+
+				.cta-button {
+					margin-top: 2em;
+					padding: 0.7em 1.4em;
+					font-family: "Montserrat", sans-serif;
+					font-size: 1.7rem;
+					background-color: $orange;
+					border-radius: 20px;
+					border: none;
+					box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+					cursor: pointer;
 				}
 			}
 		}
