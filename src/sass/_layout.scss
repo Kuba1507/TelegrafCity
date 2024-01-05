@@ -131,6 +131,7 @@ body {
 			position: relative;
 			width: 100%;
 			padding-top: 70px;
+			overflow: hidden;
 
 			.image-box {
 				img {
@@ -214,6 +215,14 @@ body {
 				left: -10%;
 				bottom: 30%;
 				z-index: -1;
+			}
+
+			.rotate-circle-one {
+				animation: rotateCircleOne infinite 5s linear;
+			}
+
+			.rotate-circle-two {
+				animation: rotateCircleTwo infinite 5s linear;
 			}
 		}
 	}
