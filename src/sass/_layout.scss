@@ -20,16 +20,19 @@ body {
 // header
 
 .header {
-	position: sticky;
-	top: 0;
-
 	.wrapper {
+		position: relative;
 		.navbar {
+			position: fixed;
+			top: 0;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			width: 100vw;
 			height: 70px;
+			background-color: $cold-steel;
 			transition: box-shadow 0.5s;
+			z-index: 999;
 
 			&__logo {
 				transition: transform 0.3s;
@@ -76,6 +79,8 @@ body {
 				width: 100%;
 				transition: all 0.4s;
 				overflow: hidden;
+				background-color: $cold-steel;
+				z-index: 999;
 
 				&-list {
 					display: block;
@@ -85,6 +90,8 @@ body {
 					list-style-type: none;
 					opacity: 0;
 					transition: opacity 0.4s;
+					background-color: $cold-steel;
+					z-index: 999;
 
 					&-item {
 						margin: 2.5em 0;
@@ -120,13 +127,12 @@ body {
 		}
 
 		.hero-section {
-			height: 650px;
+			position: relative;
 			width: 100%;
-			// background-color: rgb(255, 255, 136);
+			padding-top: 70px;
+			overflow-x: hidden;
 
 			.image-box {
-				// width: 100%;
-
 				img {
 					width: 100%;
 					filter: brightness(85%);
@@ -165,6 +171,49 @@ body {
 					box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 					cursor: pointer;
 				}
+			}
+
+			.inner-circle-first,
+			.inner-circle-second {
+				position: absolute;
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				background-color: $pure-white;
+			}
+
+			.inner-circle-first {
+				top: 22px;
+				left: 22px;
+			}
+
+			.inner-circle-second {
+				bottom: 15px;
+				right: 15px;
+			}
+
+			.circle-one,
+			.circle-two {
+				position: absolute;
+				width: 120px;
+				height: 120px;
+				background-color: $orange;
+				border-radius: 50%;
+				-webkit-box-shadow: 8px 8px 13px 0px rgba(167, 167, 167, 1);
+				-moz-box-shadow: 8px 8px 13px 0px rgba(167, 167, 167, 1);
+				box-shadow: 8px 8px 13px 0px rgba(167, 167, 167, 1);
+				opacity: 0.1;
+			}
+
+			.circle-one {
+				right: -10%;
+				bottom: -5%;
+			}
+
+			.circle-two {
+				left: -10%;
+				bottom: 30%;
+				z-index: -1;
 			}
 		}
 	}
