@@ -41,6 +41,10 @@ body {
 					text-transform: uppercase;
 					text-decoration: none;
 				}
+
+				span {
+					color: $orange;
+				}
 			}
 
 			&__hamburger {
@@ -84,6 +88,11 @@ body {
 							font-family: "Nunito", sans-serif;
 							color: $black;
 							text-decoration: none;
+							transition: color 0.3s;
+
+							&:hover {
+								color: $orange-darker;
+							}
 						}
 					}
 				}

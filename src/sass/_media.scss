@@ -1,3 +1,5 @@
+@use "colors" as *;
+
 @media (min-width: 768px) {
 	.header {
 		.wrapper {
@@ -57,9 +59,39 @@
 							margin: auto 0;
 
 							&-link {
+								position: relative;
 								display: block;
-								padding: 1em 1.75em;
-								font-size: 1.6rem;
+								padding: 0.9em 1.6em;
+								margin: 0 0.25em;
+								font-size: 1.7rem;
+								z-index: 0;
+								transition: color 0.3s;
+
+								&::after,
+								&::before {
+									transition: all 0.3s;
+								}
+
+								&::after {
+									content: "";
+									position: absolute;
+									left: 0;
+									top: 0;
+									height: 0;
+									border-bottom-left-radius: 15px;
+									border-bottom-right-radius: 15px;
+									width: 100%;
+									background-color: $orange;
+									z-index: -1;
+								}
+
+								&:hover {
+									color: $pure-white;
+								}
+
+								&:hover::after {
+									height: 100%;
+								}
 							}
 						}
 					}
