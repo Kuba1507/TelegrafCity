@@ -118,5 +118,33 @@ body {
 			height: 400px;
 			border-bottom: 1px solid $orange-darker;
 		}
+
+		.heading {
+			font-family: "Montserrat", sans-serif;
+			font-size: 2.5rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			text-align: center;
+			color: rgb(30, 30, 30);
+		}
+
+		.hero-section {
+			height: 650px;
+			width: 100%;
+			background-color: rgb(255, 255, 136);
+
+			.image-box {
+				// width: 100%;
+
+				img {
+					width: 100%;
+					filter: brightness(70%);
+				}
+			}
+
+			.text-box {
+				padding: 1em;
+			}
+		}
 	}
 }
