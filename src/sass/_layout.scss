@@ -32,6 +32,8 @@ body {
 			transition: box-shadow 0.5s;
 
 			&__logo {
+				transition: transform 0.3s;
+
 				&-link {
 					font-family: "Nunito", sans-serif;
 					font-size: 2rem;
@@ -44,6 +46,10 @@ body {
 
 				span {
 					color: $orange;
+				}
+
+				&:hover {
+					transform: scale(0.95);
 				}
 			}
 
