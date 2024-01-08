@@ -57,8 +57,9 @@
 
 				.circle-one,
 				.circle-two {
-					width: 160px;
-					height: 160px;
+					width: 140px;
+					height: 140px;
+					opacity: 0.3;
 				}
 
 				.circle-one {
@@ -79,12 +80,41 @@
 			}
 		}
 	}
+
+	.main {
+		.waves-1 {
+			height: 60px;
+		}
+
+		.waves-2 {
+			height: 80px;
+		}
+
+		.shops {
+			.shops-box {
+				margin-top: 1.25em;
+
+				&__shop {
+					height: 200px;
+					width: 55%;
+
+					.company {
+						width: 70%;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
 	.header {
 		.wrapper {
 			.navbar {
+				border-bottom-left-radius: 25px;
+				border-bottom-right-radius: 25px;
+				background-color: rgba(255, 255, 255, 0);
+
 				&__logo {
 					width: 30%;
 
@@ -101,10 +131,13 @@
 					position: static;
 					justify-content: flex-end;
 					height: 100%;
+					background-color: rgba(255, 255, 255, 0);
+					border-bottom-right-radius: 25px;
 
 					&-list {
 						display: flex;
 						margin: 0;
+						background-color: rgba(255, 255, 255, 0);
 						opacity: 1;
 
 						&-item {
@@ -240,6 +273,39 @@
 
 			.show-shadow {
 				box-shadow: none;
+			}
+		}
+	}
+
+	.main {
+		.section-title {
+			&::after {
+				height: 2px;
+				width: 8%;
+			}
+		}
+
+		.waves-1 {
+			height: 100px;
+		}
+
+		.waves-2 {
+			height: 110px;
+		}
+
+		.shops {
+			margin-top: 5em;
+
+			.shops-box {
+				flex-direction: row;
+				flex-wrap: wrap;
+				padding-bottom: 5em;
+				margin-top: 3em;
+
+				&__shop {
+					margin: 2.5em 2em;
+					width: 325px;
+				}
 			}
 		}
 	}

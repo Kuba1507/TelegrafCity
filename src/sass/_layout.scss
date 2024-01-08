@@ -249,6 +249,8 @@ body {
 	}
 }
 
+// main
+
 .main {
 	.section-title {
 		position: relative;
@@ -269,9 +271,17 @@ body {
 		}
 	}
 
-	.waves-1 {
+	.waves-1,
+	.waves-2 {
 		width: 100%;
+	}
+
+	.waves-1 {
 		height: 40px;
+	}
+
+	.waves-2 {
+		height: 50px;
 	}
 
 	.shops {
@@ -283,13 +293,14 @@ body {
 			justify-content: center;
 			align-items: center;
 			margin-top: 1em;
+			padding-bottom: 3em;
 
 			&__shop {
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				margin-top: 4em;
-				height: 200px;
+				height: 180px;
 				width: 75%;
 				background-color: $pure-white;
 				box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
