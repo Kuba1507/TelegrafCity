@@ -109,6 +109,31 @@
 				}
 			}
 		}
+
+		.about-info {
+			.wrapper {
+				.about-box {
+					.about-info {
+						padding: 0 3em;
+						font-size: 1.7rem;
+					}
+
+					.about-photos {
+						flex-direction: row;
+						padding: 0 3em;
+
+						&__photo {
+							width: 50%;
+							border-radius: 0;
+
+							&--second {
+								margin-top: 0;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
