@@ -271,6 +271,12 @@ body {
 		}
 	}
 
+	.orange {
+		&::after {
+			background-color: $orange;
+		}
+	}
+
 	.waves-1,
 	.waves-2 {
 		width: 100%;
@@ -313,6 +319,45 @@ body {
 
 				.company-olatex {
 					height: 70%;
+				}
+			}
+		}
+	}
+
+	.about-info {
+		.wrapper {
+			.about-box {
+				display: flex;
+				flex-direction: column;
+				padding: 1.25em;
+
+				.about-info {
+					font-family: "Nunito", sans-serif;
+
+					&__description {
+						margin: 2em 0;
+
+						span {
+							font-weight: bold;
+						}
+					}
+				}
+
+				.about-photos {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+
+					&__photo {
+						width: 90%;
+						border-radius: 15px;
+						box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+						&--second {
+							margin-top: 2em;
+						}
+					}
 				}
 			}
 		}

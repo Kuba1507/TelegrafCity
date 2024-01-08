@@ -97,9 +97,14 @@
 				&__shop {
 					height: 200px;
 					width: 55%;
+					transition: transform 0.3s;
 
 					.company {
 						width: 70%;
+					}
+
+					&:hover {
+						transform: scale(1.05);
 					}
 				}
 			}
