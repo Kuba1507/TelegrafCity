@@ -19,8 +19,17 @@ const handleShadow = () => {
 	navbar.classList.toggle("show-shadow");
 };
 
+const animateNavbar = () => {
+	if (window.scrollY > 70) {
+		navigation.classList.add("show-shadow");
+	} else {
+		navigation.classList.remove("show-shadow");
+	}
+};
+
 navLinks.forEach((link) => {
 	link.addEventListener("click", closeNav);
 });
 burgerBtn.addEventListener("click", handleNav);
 burgerBtn.addEventListener("click", handleShadow);
+window.addEventListener("scroll", animateNavbar);
