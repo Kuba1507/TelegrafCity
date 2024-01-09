@@ -290,6 +290,15 @@ body {
 		height: 40px;
 	}
 
+	.curve-1,
+	.curve-2 {
+		width: 100%;
+	}
+
+	.curve-1 {
+		height: 40px;
+	}
+
 	.shops {
 		background-color: $orange;
 
@@ -364,6 +373,7 @@ body {
 	}
 
 	.visualizations {
-		background-color: ;
+		margin-top: 3em;
+		background-color: $grey;
 	}
 }
