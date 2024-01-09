@@ -27,6 +27,10 @@ const animateNavbar = () => {
 	}
 };
 
+const handleVisualizationsGallery = () => {
+	
+}
+
 navLinks.forEach((link) => {
 	link.addEventListener("click", closeNav);
 });
