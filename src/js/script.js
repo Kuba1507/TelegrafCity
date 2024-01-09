@@ -38,16 +38,24 @@ const animateNavbar = () => {
 
 const handleVisualizationsGallery = (e) => {
 	const clickedPhotoSrc = e.target.src;
-
 	bigPhotoImage.src = clickedPhotoSrc;
 
+	bigPhoto.style.opacity = "0";
 	bigPhoto.style.display = "flex";
 	body.classList.add("block-scrolling");
+
+	setTimeout(() => {
+		bigPhoto.style.opacity = "1";
+	}, 50);
 };
 
 const closeVisualizationsGallery = () => {
-	bigPhoto.style.display = "none";
-	body.classList.remove("block-scrolling");
+	bigPhoto.style.opacity = "0";
+
+	setTimeout(() => {
+		bigPhoto.style.display = "none";
+		body.classList.remove("block-scrolling");
+	}, 500);
 };
 
 navLinks.forEach((link) => {
