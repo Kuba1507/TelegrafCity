@@ -377,6 +377,7 @@ body {
 	}
 
 	.visualizations {
+		position: relative;
 		margin-top: 3em;
 		background-color: $grey;
 
@@ -431,6 +432,15 @@ body {
 					}
 				}
 			}
+		}
+
+		.blob {
+			position: absolute;
+			top: 100px;
+			left: 100px;
+			width: 400px;
+			height: 400px;
+			background-color: rgb(140, 255, 140);
 		}
 	}
 }
