@@ -407,17 +407,19 @@ body {
 		}
 
 		.wrapper {
+			text-align: center;
+
+			.tip {
+				margin-top: 1.5em;
+				font-family: "Nunito", sans-serif;
+			}
+
 			.visualizations-box {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
 				margin-top: 1em;
-
-				&__tip {
-					margin-top: 1em;
-					font-family: "Nunito", sans-serif;
-				}
 
 				&__element {
 					margin-top: 2em;

@@ -390,5 +390,50 @@
 				}
 			}
 		}
+
+		.visualizations {
+			.section-title {
+				margin-top: 2em;
+			}
+
+			&__show-photo {
+				&-image {
+					width: 50%;
+				}
+
+				&-x {
+					top: 30px;
+					right: 30px;
+					height: 80px;
+					width: 80px;
+					transition: transform 0.3s;
+
+					&:hover {
+						transform: rotate(360deg);
+					}
+				}
+			}
+
+			.wrapper {
+				.visualizations-box {
+					flex-direction: row;
+					flex-wrap: wrap;
+
+					&__element {
+						padding: 0 2em;
+						width: 25%;
+						transition: transform 0.3s;
+
+						&-img {
+							border-radius: 5px;
+						}
+
+						&:hover {
+							transform: scale(0.95);
+						}
+					}
+				}
+			}
+		}
 	}
 }
