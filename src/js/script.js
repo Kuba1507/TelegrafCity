@@ -36,8 +36,12 @@ const animateNavbar = () => {
 	}
 };
 
-const handleVisualizationsGallery = () => {
-	bigPhoto.style.display = "block";
+const handleVisualizationsGallery = (e) => {
+	const clickedPhotoSrc = e.target.src;
+
+	bigPhotoImage.src = clickedPhotoSrc;
+
+	bigPhoto.style.display = "flex";
 	body.classList.add("block-scrolling");
 };
 
