@@ -18,6 +18,10 @@ body {
 	width: min(100%, 1200px);
 }
 
+.block-scrolling {
+	overflow-y: hidden;
+}
+
 // header
 
 .header {
@@ -376,6 +380,24 @@ body {
 		margin-top: 3em;
 		background-color: $grey;
 
+		&__show-photo {
+			display: block;
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.6);
+			z-index: 999;
+
+			&-x {
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 999;
+			}
+		}
+
 		.wrapper {
 			.visualizations-box {
 				display: flex;
@@ -397,17 +419,6 @@ body {
 					&-img {
 						width: 100%;
 					}
-				}
-
-				&__show-photo {
-					display: none;
-					position: absolute;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					background-color: rgba(0, 0, 0, 0.6);
-					z-index: 999;
 				}
 			}
 		}
