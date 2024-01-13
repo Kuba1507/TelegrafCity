@@ -161,6 +161,26 @@
 				}
 			}
 		}
+
+		.localization {
+			.wrapper {
+				.localization-box {
+					&__info {
+						&-element {
+							padding: 2em 8em;
+
+							&-title {
+								font-size: 1.9rem;
+							}
+
+							&-description {
+								font-size: 1.7rem;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -444,6 +464,49 @@
 
 						&:hover {
 							transform: scale(0.95);
+						}
+					}
+				}
+			}
+		}
+
+		.localization {
+			.wrapper {
+				.localization-box {
+					flex-direction: row;
+					align-items: center;
+					margin-top: 4em;
+
+					&__info {
+						width: 50%;
+
+						&-element {
+							padding: 0 5em;
+							margin: 1.5em 0;
+
+							&-title {
+								font-size: 1.7rem;
+
+								img {
+									width: 30px;
+									height: 30px;
+								}
+							}
+
+							&-description {
+								font-size: 1.6rem;
+							}
+						}
+					}
+
+					&__google-map {
+						padding-left: 1em;
+						width: 45%;
+
+						iframe {
+							height: 470px;
+
+							box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 						}
 					}
 				}
