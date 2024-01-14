@@ -593,6 +593,7 @@ body {
 				height: 180px;
 				background-size: cover;
 				background-position: center;
+				transition: box-shadow 0.3s;
 
 				a {
 					position: relative;
@@ -602,7 +603,20 @@ body {
 					text-align: center;
 					text-decoration: none;
 					color: $cold-steel;
+					transition: color 0.3s;
 					z-index: 2;
+				}
+
+				&:hover {
+					box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+				}
+
+				&:hover .shadow {
+					background-color: rgba(0, 0, 0, 0.75);
+				}
+
+				&:hover a {
+					color: $orange;
 				}
 			}
 
@@ -622,6 +636,7 @@ body {
 				bottom: 0;
 				left: 0;
 				background-color: rgba(0, 0, 0, 0.55);
+				transition: background-color 0.3s;
 				z-index: 1;
 			}
 		}
