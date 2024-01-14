@@ -95,6 +95,10 @@
 			height: 50px;
 		}
 
+		.waves-opacity {
+			height: 60px;
+		}
+
 		.shops {
 			.shops-box {
 				margin-top: 1.25em;
@@ -163,6 +167,8 @@
 		}
 
 		.localization {
+			padding-bottom: 6em;
+
 			.wrapper {
 				.localization-box {
 					&__info {
@@ -178,6 +184,26 @@
 							}
 						}
 					}
+				}
+			}
+		}
+
+		.contact {
+			.contact-box {
+				flex-direction: row;
+				justify-content: center;
+
+				&__element {
+					margin: 1em 1.25em;
+				}
+			}
+
+			.check-others-box {
+				flex-direction: row;
+
+				.pod-telegrafem,
+				.trattoria {
+					width: 50%;
 				}
 			}
 		}
@@ -369,6 +395,10 @@
 			height: 100px;
 		}
 
+		.waves-opacity {
+			height: 100px;
+		}
+
 		.shops {
 			margin-top: 5em;
 
@@ -471,6 +501,8 @@
 		}
 
 		.localization {
+			padding-bottom: 12em;
+
 			.wrapper {
 				.localization-box {
 					flex-direction: row;
@@ -508,6 +540,53 @@
 
 							box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 						}
+					}
+				}
+			}
+		}
+
+		.contact {
+			.section-title {
+				margin-top: 1em;
+			}
+
+			.contact-box {
+				&__element {
+					margin: 1em 2em;
+				}
+			}
+
+			.check-others {
+				margin-top: 2em;
+			}
+
+			.check-others-box {
+				justify-content: center;
+				margin-top: 2em;
+
+				.pod-telegrafem,
+				.trattoria {
+					width: 40%;
+					height: 200px;
+
+					a {
+						font-size: 2.5rem;
+					}
+				}
+
+				.pod-telegrafem {
+					border-top-left-radius: 10px;
+
+					.shadow {
+						border-top-left-radius: 10px;
+					}
+				}
+
+				.trattoria {
+					border-top-right-radius: 10px;
+
+					.shadow {
+						border-top-right-radius: 10px;
 					}
 				}
 			}
