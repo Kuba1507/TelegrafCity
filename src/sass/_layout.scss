@@ -577,5 +577,53 @@ body {
 			color: $dark;
 			text-align: center;
 		}
+
+		.check-others-box {
+			display: flex;
+			flex-direction: column;
+			margin-top: 1em;
+
+			.pod-telegrafem,
+			.trattoria {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 1em;
+				height: 180px;
+				background-size: cover;
+				background-position: center;
+
+				a {
+					position: relative;
+					font-family: 'Montserrat', sans-serif;
+					font-weight: bold;
+					font-size: 2.2rem;
+					text-align: center;
+					text-decoration: none;
+					color: $cold-steel;
+					z-index: 2;
+				}
+			}
+
+			.pod-telegrafem {
+				background-image: url('../img/check-1.png');
+			}
+
+			.trattoria {
+				position: relative;
+				background-image: url('../img/check-2.png');
+			}
+
+			.shadow {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, 0.55);
+				z-index: 1;
+			}
+		}
 	}
 }
