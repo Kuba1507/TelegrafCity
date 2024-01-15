@@ -358,6 +358,7 @@ body {
 				display: flex;
 				flex-direction: column;
 				padding: 1.25em;
+				overflow: hidden;
 
 				.about-info {
 					font-family: "Nunito", sans-serif;
