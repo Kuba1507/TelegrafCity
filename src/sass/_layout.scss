@@ -1,5 +1,5 @@
-@use 'colors' as *;
-@use 'animations' as *;
+@use "colors" as *;
+@use "animations" as *;
 
 html {
 	font-size: 62.5%;
@@ -43,7 +43,7 @@ body {
 				transition: transform 0.3s;
 
 				&-link {
-					font-family: 'Nunito', sans-serif;
+					font-family: "Nunito", sans-serif;
 					font-size: 2rem;
 					font-weight: 600;
 					color: $black;
@@ -103,7 +103,7 @@ body {
 
 						&-link {
 							padding: 1em 2em;
-							font-family: 'Nunito', sans-serif;
+							font-family: "Nunito", sans-serif;
 							color: $black;
 							text-decoration: none;
 							transition: color 0.3s;
@@ -122,7 +122,8 @@ body {
 		}
 
 		.show-shadow {
-			box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+				rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 		}
 
 		.show-menu {
@@ -158,7 +159,7 @@ body {
 				text-align: center;
 
 				.heading {
-					font-family: 'Montserrat', sans-serif;
+					font-family: "Montserrat", sans-serif;
 					font-size: 2.7rem;
 					font-weight: 600;
 					text-transform: uppercase;
@@ -168,7 +169,7 @@ body {
 
 				&__description {
 					margin-top: 0.75em;
-					font-family: 'Nunito', sans-serif;
+					font-family: "Nunito", sans-serif;
 					font-size: 1.6rem;
 					font-weight: 400;
 					text-align: center;
@@ -177,7 +178,7 @@ body {
 				.cta-button {
 					margin-top: 3em;
 					padding: 0.7em 1.4em;
-					font-family: 'Montserrat', sans-serif;
+					font-family: "Montserrat", sans-serif;
 					font-size: 1.7rem;
 					background-color: $orange;
 					border-radius: 20px;
@@ -257,13 +258,13 @@ body {
 .main {
 	.section-title {
 		position: relative;
-		font-family: 'Montserrat', sans-serif;
+		font-family: "Montserrat", sans-serif;
 		font-weight: 400;
 		text-align: center;
 		margin-top: 1em;
 
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			bottom: -12px;
 			left: 50%;
@@ -336,7 +337,8 @@ body {
 				height: 200px;
 				width: 70%;
 				background-color: $pure-white;
-				box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+				box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+					rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 				border-radius: 8px;
 
 				.company {
@@ -358,7 +360,7 @@ body {
 				padding: 1.25em;
 
 				.about-info {
-					font-family: 'Nunito', sans-serif;
+					font-family: "Nunito", sans-serif;
 
 					&__description {
 						margin: 2em 0;
@@ -426,7 +428,7 @@ body {
 
 			.tip {
 				margin-top: 1.5em;
-				font-family: 'Nunito', sans-serif;
+				font-family: "Nunito", sans-serif;
 			}
 
 			.visualizations-box {
@@ -495,7 +497,7 @@ body {
 
 					&-element {
 						padding: 2em 1em;
-						font-family: 'Nunito', sans-serif;
+						font-family: "Nunito", sans-serif;
 						font-weight: 300;
 
 						&-title {
@@ -541,7 +543,7 @@ body {
 
 		.contact-info {
 			padding: 2em;
-			font-family: 'Montserrat', sans-serif;
+			font-family: "Montserrat", sans-serif;
 			text-align: center;
 		}
 
@@ -562,7 +564,7 @@ body {
 				}
 
 				&-info {
-					font-family: 'Nunito', sans-serif;
+					font-family: "Nunito", sans-serif;
 					font-weight: 400;
 					color: $dark;
 				}
@@ -571,7 +573,7 @@ body {
 
 		.check-others {
 			margin-top: 1em;
-			font-family: 'Montserrat', sans-serif;
+			font-family: "Montserrat", sans-serif;
 			font-size: 1.8rem;
 			font-weight: bold;
 			color: $dark;
@@ -597,7 +599,7 @@ body {
 
 				a {
 					position: relative;
-					font-family: 'Montserrat', sans-serif;
+					font-family: "Montserrat", sans-serif;
 					font-weight: bold;
 					font-size: 2.2rem;
 					text-align: center;
@@ -608,7 +610,8 @@ body {
 				}
 
 				&:hover {
-					box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+					box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+						rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 				}
 
 				&:hover .shadow {
@@ -621,12 +624,12 @@ body {
 			}
 
 			.pod-telegrafem {
-				background-image: url('../img/check-1.png');
+				background-image: url("../img/check-1.png");
 			}
 
 			.trattoria {
 				position: relative;
-				background-image: url('../img/check-2.png');
+				background-image: url("../img/check-2.png");
 			}
 
 			.shadow {
@@ -639,6 +642,39 @@ body {
 				transition: background-color 0.3s;
 				z-index: 1;
 			}
+		}
+	}
+}
+
+// footer
+
+.footer {
+	padding: 1em;
+	background-color: $dark;
+
+	.footer-mobile,
+	.footer-desktop {
+		p {
+			font-family: "Nunito", sans-serif;
+			color: $pure-white;
+		}
+	}
+
+	.footer-desktop {
+		display: none;
+		text-align: center;
+
+		.author {
+			font-size: 1.3rem;
+			font-weight: 300;
+		}
+	}
+
+	.footer-mobile {
+		text-align: center;
+
+		.copyright {
+			font-size: 1.6rem;
 		}
 	}
 }
