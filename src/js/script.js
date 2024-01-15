@@ -4,6 +4,7 @@ const navigation = document.querySelector(".navbar");
 const navbar = document.querySelector(".navbar__menu");
 const navbarList = document.querySelector(".navbar__menu-list");
 const navLinks = document.querySelectorAll(".navbar__menu-list-item");
+const ctaButton = document.querySelector(".cta-button");
 const visualizationsPhotos = document.querySelectorAll(
 	".visualizations-box__element-img"
 );
@@ -33,6 +34,14 @@ const animateNavbar = () => {
 		navigation.classList.add("show-shadow");
 	} else {
 		navigation.classList.remove("show-shadow");
+	}
+};
+
+const moveToSection = () => {
+	const aboutInfoSection = document.getElementById("about-info");
+
+	if (aboutInfoSection) {
+		aboutInfoSection.scrollIntoView({ behavior: "smooth" });
 	}
 };
 
