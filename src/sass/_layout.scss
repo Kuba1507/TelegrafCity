@@ -1,5 +1,5 @@
-@use "colors" as *;
-@use "animations" as *;
+@use 'colors' as *;
+@use 'animations' as *;
 
 html {
 	font-size: 62.5%;
@@ -43,7 +43,7 @@ body {
 				transition: transform 0.3s;
 
 				&-link {
-					font-family: "Nunito", sans-serif;
+					font-family: 'Nunito', sans-serif;
 					font-size: 2rem;
 					font-weight: 600;
 					color: $black;
@@ -103,7 +103,7 @@ body {
 
 						&-link {
 							padding: 1em 2em;
-							font-family: "Nunito", sans-serif;
+							font-family: 'Nunito', sans-serif;
 							color: $black;
 							text-decoration: none;
 							transition: color 0.3s;
@@ -122,8 +122,7 @@ body {
 		}
 
 		.show-shadow {
-			box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-				rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+			box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 		}
 
 		.show-menu {
@@ -159,7 +158,7 @@ body {
 				text-align: center;
 
 				.heading {
-					font-family: "Montserrat", sans-serif;
+					font-family: 'Montserrat', sans-serif;
 					font-size: 2.7rem;
 					font-weight: 600;
 					text-transform: uppercase;
@@ -169,7 +168,7 @@ body {
 
 				&__description {
 					margin-top: 0.75em;
-					font-family: "Nunito", sans-serif;
+					font-family: 'Nunito', sans-serif;
 					font-size: 1.6rem;
 					font-weight: 400;
 					text-align: center;
@@ -178,7 +177,7 @@ body {
 				.cta-button {
 					margin-top: 3em;
 					padding: 0.7em 1.4em;
-					font-family: "Montserrat", sans-serif;
+					font-family: 'Montserrat', sans-serif;
 					font-size: 1.7rem;
 					background-color: $orange;
 					border-radius: 20px;
@@ -258,13 +257,13 @@ body {
 .main {
 	.section-title {
 		position: relative;
-		font-family: "Montserrat", sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-weight: 400;
 		text-align: center;
 		margin-top: 1em;
 
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			bottom: -12px;
 			left: 50%;
@@ -310,6 +309,14 @@ body {
 		transform: rotate(180deg);
 	}
 
+	.waves-opacity {
+		position: absolute;
+		bottom: -2px;
+		width: 100%;
+		height: 40px;
+		transform: rotate(180deg);
+	}
+
 	.shops {
 		background-color: $orange;
 
@@ -329,8 +336,7 @@ body {
 				height: 200px;
 				width: 70%;
 				background-color: $pure-white;
-				box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-					rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+				box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 				border-radius: 8px;
 
 				.company {
@@ -352,7 +358,7 @@ body {
 				padding: 1.25em;
 
 				.about-info {
-					font-family: "Nunito", sans-serif;
+					font-family: 'Nunito', sans-serif;
 
 					&__description {
 						margin: 2em 0;
@@ -420,7 +426,7 @@ body {
 
 			.tip {
 				margin-top: 1.5em;
-				font-family: "Nunito", sans-serif;
+				font-family: 'Nunito', sans-serif;
 			}
 
 			.visualizations-box {
@@ -470,6 +476,169 @@ body {
 	}
 
 	.localization {
+		position: relative;
 		margin-top: -0.5em;
+		padding-bottom: 4em;
+
+		.wrapper {
+			.localization-box {
+				display: flex;
+				flex-direction: column;
+				margin-top: 3em;
+
+				&__info {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					order: 2;
+
+					&-element {
+						padding: 2em 1em;
+						font-family: 'Nunito', sans-serif;
+						font-weight: 300;
+
+						&-title {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							font-weight: bold;
+							font-size: 1.8rem;
+
+							img {
+								margin-right: 0.25em;
+								width: 35px;
+								height: 35px;
+							}
+						}
+
+						&-description {
+							margin-top: 0.5em;
+						}
+					}
+				}
+
+				&__google-map {
+					margin-top: 1em;
+
+					iframe {
+						width: 100%;
+						height: 400px;
+					}
+					order: 1;
+				}
+			}
+		}
+	}
+
+	.contact {
+		background-color: $orange;
+		padding-top: 1.5em;
+
+		.section-title {
+			margin: 0;
+		}
+
+		.contact-info {
+			padding: 2em;
+			font-family: 'Montserrat', sans-serif;
+			text-align: center;
+		}
+
+		.contact-box {
+			display: flex;
+			flex-direction: column;
+
+			&__element {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 1em 0;
+
+				&-icon {
+					width: 35px;
+					height: 35px;
+					margin-bottom: 0.5em;
+				}
+
+				&-info {
+					font-family: 'Nunito', sans-serif;
+					font-weight: 400;
+					color: $dark;
+				}
+			}
+		}
+
+		.check-others {
+			margin-top: 1em;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1.8rem;
+			font-weight: bold;
+			color: $dark;
+			text-align: center;
+		}
+
+		.check-others-box {
+			display: flex;
+			flex-direction: column;
+			margin-top: 1em;
+
+			.pod-telegrafem,
+			.trattoria {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 1em;
+				height: 180px;
+				background-size: cover;
+				background-position: center;
+				transition: box-shadow 0.3s;
+
+				a {
+					position: relative;
+					font-family: 'Montserrat', sans-serif;
+					font-weight: bold;
+					font-size: 2.2rem;
+					text-align: center;
+					text-decoration: none;
+					color: $cold-steel;
+					transition: color 0.3s;
+					z-index: 2;
+				}
+
+				&:hover {
+					box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+				}
+
+				&:hover .shadow {
+					background-color: rgba(0, 0, 0, 0.75);
+				}
+
+				&:hover a {
+					color: $orange;
+				}
+			}
+
+			.pod-telegrafem {
+				background-image: url('../img/check-1.png');
+			}
+
+			.trattoria {
+				position: relative;
+				background-image: url('../img/check-2.png');
+			}
+
+			.shadow {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, 0.55);
+				transition: background-color 0.3s;
+				z-index: 1;
+			}
+		}
 	}
 }
