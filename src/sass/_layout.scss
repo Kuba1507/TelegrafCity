@@ -397,10 +397,10 @@ body {
 		}
 
 		.for-rent {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
 			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			margin-top: 1.5em;
 			padding: 2em 2em;
 			background-image: url("../img/rental-banner.jpg");
@@ -408,29 +408,38 @@ body {
 			background-position: center;
 			background-attachment: fixed;
 
-			&__info,
-			&__available,
-			&__local {
-				position: relative;
-				font-family: "Montserrat", sans-serif;
-				color: $pure-white;
+			.border {
+				padding: 1em;
+				border: 2px solid $orange;
 				z-index: 2;
-			}
 
-			&__info {
-				font-size: 2rem;
-			}
+				.rent {
+					position: relative;
+					margin-bottom: 0.5em;
+					font-family: "Montserrat", sans-serif;
+					color: $pure-white;
+					z-index: 2;
+				}
 
-			&__available {
-				margin-top: 0.75em;
-				margin-bottom: 1em;
-				font-weight: 300;
-			}
+				.rent-heading {
+					font-size: 1.9rem;
+					text-align: center;
+				}
 
-			&__local {
-				margin: 0.25em 0;
-				font-size: 1.4rem;
-				font-weight: 300;
+				.rent-available {
+					font-size: 1.8rem;
+					text-align: center;
+				}
+
+				.rent-available,
+				.rent-local {
+					font-weight: 300;
+				}
+
+				.rent-local {
+					margin: 0.75em 0;
+					font-size: 1.5rem;
+				}
 			}
 
 			&__shadow {
